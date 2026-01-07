@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Online Quiz Application</h1>
+        <p>Test your knowledge</p>
+    </header>
+
+    <section class="quiz">
+        <form action="/submit" method="post">
+
+            <div class="question">
+                <p>1. What does HTML stand for?</p>
+                <input type="radio" name="q1" value="correct"> Hyper Text Markup Language<br>
+                <input type="radio" name="q1" value="wrong"> High Text Machine Language<br>
+            </div>
+
+            <div class="question">
+                <p>2. Which language is used for backend?</p>
+                <input type="radio" name="q2" value="wrong"> HTML<br>
+                <input type="radio" name="q2" value="correct"> Node.js<br>
+            </div>
+
+            <div class="question">
+                <p>3. Which framework is used with Node.js?</p>
+                <input type="radio" name="q3" value="correct"> Express<br>
+                <input type="radio" name="q3" value="wrong"> Bootstrap<br>
+            </div>
+
+            <button type="submit">Submit Quiz</button>
+
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Online Quiz</p>
+    </footer>
+
+</body>
+</html>

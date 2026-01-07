@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Homepage</title>
+  <!-- Relative link to CSS -->
+  <link rel="stylesheet" href="1AT24CS099.css">
+</head>
+<body>
+  <header>Choose Your Quiz</header>
+
+  <!-- Category Grid -->
+  <div id="category-box">
+    <div onclick="showStart('gk')">General Knowledge</div>
+    <div onclick="showStart('social')">Social Studies</div>
+    <div onclick="showStart('science')">Science</div>
+    <div onclick="showStart('maths')">Maths</div>
+    <div onclick="showStart('computer')">Computer Science</div>
+    <div onclick="showStart('sports')">Sports</div>
+    <div onclick="showStart('music')">Music</div>
+    <div onclick="showStart('food')">Food & Culture</div>
+    <div onclick="showStart('temple')">Temple Trivia</div>
+    <div onclick="showStart('travel')">Travel & Places</div>
+    <div onclick="showStart('rapid')">Rapid Fire</div>
+    <div onclick="showStart('all')">All in One</div>
+  </div>
+
+  <!-- Start Confirmation -->
+  <div id="start-box" style="display:none;">
+    <p>Shall we start the quiz?</p>
+    <button onclick="startQuiz()">Start</button>
+  </div>
+
+  <!-- Quiz Area -->
+  <div id="quiz-box" style="display:none;">
+    <div id="question"></div>
+    <div id="options"></div>
+    <div id="feedback"></div>
+    <button id="next">Next</button>
+  </div>
+
+  <!-- Relative link to JS -->
+  <script src="1At24CS099.js"></script>
+</body>
+</html>
